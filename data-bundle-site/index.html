@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lite Bore - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .top-nav {
+      background: #fff;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 18px;
+      color: #d20000;
+    }
+
+    .brand span {
+      font-size: 20px;
+    }
+
+    .menu, .profile {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .menu {
+      background: url('https://img.icons8.com/ios-filled/50/menu--v1.png') center/cover no-repeat;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .banner {
+      width: 100%;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services {
+      padding: 15px;
+    }
+
+    .services h2 {
+      color: #e60000;
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      margin-bottom: 15px;
+      display: flex;
+      gap: 15px;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      flex: 1;
+    }
+
+    .card-content h4 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .card-content p {
+      margin: 5px 0;
+      font-size: 12px;
+    }
+
+    .rating {
+      font-size: 13px;
+      color: #f39c12;
+      font-weight: bold;
+    }
+
+    .price-badge {
+      background: #e60000;
+      color: white;
+      border-radius: 15px;
+      font-size: 12px;
+      padding: 4px 8px;
+      float: right;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .dots {
+      text-align: center;
+      padding: 10px;
+    }
+
+    .dot {
+      height: 8px;
+      width: 8px;
+      margin: 0 4px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: #e60000;
+    }
+
+    .see-more {
+      text-align: right;
+      padding: 0 20px 10px;
+      font-size: 14px;
+      color: #e60000;
+      font-weight: bold;
+    }
+
+    .bottom-nav {
+      background: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .bottom-nav a {
+      text-align: center;
+      font-size: 20px;
+      color: #e60000;
+    }
+
+    .bottom-nav a.active {
+      background: #e60000;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-nav">
+    <div class="menu"></div>
+    <div class="brand">LITE BORE <span>💯⚡</span></div>
+    <div class="profile">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Profile">
+    </div>
+  </div>
+
+  <div class="banner">
+    <img src="uploads/1.png" alt="Banner Image" />
+  </div>
+
+  <div class="services">
+    <h2>OUR SERVICES</h2>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/facebook.png" alt="Facebook">
+      <div class="card-content">
+        <h4><span class="rating">★ 4.8</span></h4>
+        <p>Boost your followers, likes and comments instantly with <b>LITEBORE</b><br><b>GET 1K LIKES ⚡ AND 500 FOLLOWS IN TWO DAYS 🎉</b></p>
+        <a href="register.php" class="price-badge">FREE</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/instagram-new.png" alt="Instagram">
+      <div class="card-content">
+        <h4><span class="rating">★ 4.9</span></h4>
+        <p>Boost your followers, likes and comments instantly with <b>LITEBORE</b><br><b>GET 2K FOLLOWS ON INSTAGRAM IN 5 DAYS 🎉</b></p>
+        <a href="register.php" class="price-badge">FREE</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/facebook.png" alt="Facebook">
+      <div class="card-content">
+        <h4><span class="rating">★ 4.8</span></h4>
+        <p>Boost your followers, likes and comments instantly with <b>LITEBORE</b><br><b>GET 5K LIKES 🔥 ON FACEBOOK IN A WEEK</b></p>
+        <span class="price-badge">$ 0.99</span>
+      </div>
+    </div>
+
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="see-more">See More ➤</div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/chat.png" alt="Chat" /></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/like--v1.png" alt="Like" /></a>
+    <a href="#" class="active"><img src="https://img.icons8.com/ios-glyphs/30/home.png" alt="Home" /></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/shopping-cart.png" alt="Cart" /></a>
+    <a href="#"><img src="https://img.icons8.com/ios-glyphs/30/menu--v1.png" alt="Menu" /></a>
+  </div>
+
+</body>
+</html>
+
